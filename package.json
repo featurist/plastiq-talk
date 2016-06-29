@@ -1,0 +1,31 @@
+{
+  "name": "plastiq-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-preset-es2015": "6.0.15",
+    "babel-preset-react": "6.0.15",
+    "babelify": "7.2.0",
+    "beefy": "2.1.8",
+    "country-data": "0.0.25",
+    "httpism": "2.0.0",
+    "lowscore": "1.8.1",
+    "plastiq": "1.30.1",
+    "plastiq-router": "2.17.2",
+    "watchify": "3.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-reader": "beefy -t babelify --index reader/index.html -p 4000 reader/app.jsx:app.js",
+    "start-form": "beefy -t babelify --index form/index.html -p 4000 form/app.jsx:app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}
